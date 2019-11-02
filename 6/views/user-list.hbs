@@ -1,0 +1,21 @@
+<div>
+
+    {{#if error}} 
+        <p>{{error}}</p>
+    {{/if}}
+
+    <h1>Пользователи</h1>
+
+    {{#each users}} 
+        <p>{{username}} - {{password}}</p>
+    {{/each}}
+
+    <form method="POST">
+
+        <input id='username' name='username' />
+        <input id='password' name='password' type="password" />
+        <input type='submit' value='Добавить пользователя' />
+
+    </form>
+
+</div>

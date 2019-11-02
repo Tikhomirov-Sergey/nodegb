@@ -1,0 +1,22 @@
+<div>
+    <h>Tasks</h>
+
+    <div>
+
+        {{#each tasks}}
+            <div>
+                <a href='/task/{{_id}}'>{{name}}</a> 
+                <a href='/task/delete/{{_id}}'>Удалить</a>
+            </div>
+        {{/each}}
+
+    </div>
+
+</div>
+
+<form method='POST'>
+
+    <input id='name' name='name' type='text' required='true'/>
+    <input type="submit" value="Сохранить">
+
+</form>
